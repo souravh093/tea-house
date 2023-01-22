@@ -22,7 +22,7 @@
                 sec: '#FF8938',
               },
               fontFamily: {
-                'manrope': ['Manrope', 'sans-serif'],
+                'sans': ['Manrope', 'sans-serif'],
               }
             }
           }
@@ -30,91 +30,87 @@
     </script>
 </head>
 <body>
-    <header>
+    <header class="grid grid-cols-2 items-center px-40 py-20">
         <div class="hero-content">
-            <h2>
+            <h2 class="leading-snug text-[80px] font-bold font-sans">
                 It's good 
 tea time at The Tea House
             </h2>
-            <p>
+            <p class="font-sans text-[18px] text-gray-700 my-5">
                 Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
             </p>
-            <button>Explore More</button>
+            <div class="">
+                <button class="bg-gradient-to-r from-sec to-pri p-5 rounded-xl text-2xl text-gray-50">Explore More  <i class="fa-solid fa-arrow-trend-up"></i></button><img src="images/arrow.png" alt="">
+            </div>
         </div>
-        <div class="hero-images">
-            <img src="images/banner.png" alt="">
-            <div class="rating-content">
+        <div class="hero-images relative">
+            <img src="images/banner.png" class="w-full" alt="">
+            <div class="bottom-3 left-24 bg-white rating-content flex shadow-md absolute py-5 px-8 justify-center items-center gap-3 rounded-md">
                 <div>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star text-5xl text-pri"></i>
                 </div>
                 <div>
-                    <h2>5.00</h2>
-                    <p>Trust Pilot Ratings</p>
+                    <h2 class="text-3xl font-bold">5.00</h2>
+                    <p class="tex-gray-700">Trust Pilot Ratings</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="feature-area">
-            <div class="title-area">
-                <h2>Our Featured Products</h2>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+    <main class="px-40">
+        <section class="feature-area mt-32 my-40">
+            <div class="title-area flex flex-col justify-center items-center">
+                <h2 class="text-5xl font-bold mb-5 font-sans">Our Featured Products</h2>
+                <p class="text-center mb-12">There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
-            <div>
-                <div class="feature-item">
-                    <img src="images/tea-1.png" alt="">
-                    <h2>Milk Tea</h2>
-                    <p>Creamer could be replaced by fresh milk</p>
+            <div class="grid grid-cols-4 gap-10">
+                <div class="feature-item p-10 text-center bg-rose-50 rounded-xl">
+                    <img class="m-auto" src="images/tea-1.png" alt="">
+                    <h2 class="text-3xl font-bold my-5">Milk Tea</h2>
+                    <p>Creamer could be replaced <br> by fresh milk</p>
                 </div>
-                <div class="feature-item">
-                    <img src="images/tea-2.png" alt="">
-                    <h2>Milk Tea</h2>
-                    <p>Creamer could be replaced by fresh milk</p>
+                <div class="feature-item p-10 text-center bg-rose-50 rounded-xl">
+                    <img class="m-auto" src="images/tea-2.png" alt="">
+                    <h2 class="text-3xl font-bold my-5">Milk Tea</h2>
+                    <p>Creamer could be replaced <br> by fresh milk</p>
                 </div>
-                <div class="feature-item">
-                    <img src="images/tea-3.png" alt="">
-                    <h2>Milk Tea</h2>
-                    <p>Creamer could be replaced by fresh milk</p>
+                <div class="feature-item p-10 text-center bg-rose-50 rounded-xl">
+                    <img class="m-auto" src="images/tea-3.png" alt="">
+                    <h2 class="text-3xl font-bold my-5">Milk Tea</h2>
+                    <p>Creamer could be replaced <br> by fresh milk</p>
                 </div>
-                <div class="feature-item">
-                    <img src="images/tea-4.png" alt="">
-                    <h2>Milk Tea</h2>
-                    <p>Creamer could be replaced by fresh milk</p>
+                <div class="feature-item p-10 text-center bg-rose-50 rounded-xl">
+                    <img class="m-auto" src="images/tea-4.png" alt="">
+                    <h2 class="text-3xl font-bold my-5">Milk Tea</h2>
+                    <p>Creamer could be replaced <br> by fresh milk</p>
                 </div>
             </div>
         </section>
 
-        <section class="Presented-area">
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <section class="Presented-area grid grid-cols-2 gap-12 mb-32">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="bg-rose-50 h-40"></div>
+                <div class="bg-rose-50 row-span-2"><img src="images/fresh-1.png" class="mx-auto py-10" alt=""></div>
+                <div class="bg-rose-50 row-span-2"><img src="images/fresh-2.png" class="mx-auto py-10" alt=""></div>
+                <div class="bg-rose-50 h-40"></div>
             </div>
             <div>
-                <h2>Great Tea, Freshly Presented</h2>
-                <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
-                <h2>Unique Taste</h2>
-                <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
-                <h2>Premium Quality</h2>
-                <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
+                <h2 class="text-5xl font-bold">Great Tea, Freshly<br> Presented</h2>
+                <p class="text-gray-700 text-lg my-10">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h2 class="text-3xl font-bold">Unique Taste</h2>
+                <p class="text-gray-700 text-lg mt-2 mb-10">A Unique and different style from other teapots gives <br> a luxurious and minimalist impression</p>
+                <h2 class="text-3xl font-bold mb-2">Premium Quality</h2>
+                <p class="text-gray-700 text-lg">Premium Quality that makes tea more elegant<br> and more durable when you use it.</p>
             </div>
         </section>
 
         <section class="client-area">
-            <div>
-                <h2>Meet Our Super Clients</h2>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                <button>Show All</button>
-            </div>
-            <div>
+            <div class="grid grid-cols-2">
+                <div>
+                    <h2>Meet Our Super Clients</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                    <button>Show All</button>
+                </div>
                 <div class="review-items">
                     <div class="review-item">
                         <div>
@@ -137,7 +133,7 @@ tea time at The Tea House
                         </div>
                     </div>
                 </div>
-                <div class="review-item">
+                <div class="review-item" style="display: none;">
                     <div>
                         <img src="images/client.png" alt="">                            
                     </div>
@@ -155,7 +151,7 @@ tea time at The Tea House
                 <h2>Our Featured Products</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
-            <div class="news-container">
+            <div class="news-container grid grid-cols-3">
                 <div class="news-item">
                     <img src="images/news-1.png" alt="">
                     <p>Feb 05, 2027</p>
@@ -181,8 +177,8 @@ tea time at The Tea House
         </section>
     </main>
 
-    <footer>
-        <div>
+    <footer class="px-40 py-32 bg-rose-50">
+        <div class="flex justify-between items-center">
             <div>
                 <img src="images/cup.png" alt="">
             </div>
@@ -195,7 +191,7 @@ tea time at The Tea House
                 </div>
             </div>
         </div>
-        <div>
+        <div class="grid grid-cols-4">
             <div>
                 <h2>Quick Links</h2>
                 <ul>
@@ -234,7 +230,7 @@ tea time at The Tea House
                 </div>
             </div>
         </div>
-        <div>
+        <div class="text-center">
             <h2>&copy;2023 Sourav halde- All right reserved</h2>
         </div>
     </footer>
