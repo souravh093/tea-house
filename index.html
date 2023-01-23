@@ -16,6 +16,22 @@
     <script>
         tailwind.config = {
           theme: {
+            screens: {
+                '2xl': {'max': '1535px'},
+                // => @media (max-width: 1535px) { ... }
+
+                'xl': {'max': '1279px'},
+                // => @media (max-width: 1279px) { ... }
+
+                'lg': {'max': '1023px'},
+                // => @media (max-width: 1023px) { ... }
+
+                'md': {'max': '767px'},
+                // => @media (max-width: 767px) { ... }
+
+                'sm': {'max': '639px'},
+                // => @media (max-width: 639px) { ... }
+                },
             extend: {
               colors: {
                 pri: '#FF0000',
@@ -30,9 +46,9 @@
     </script>
 </head>
 <body>
-    <header class="grid grid-cols-2 items-center px-40 py-20">
+    <header class="grid grid-cols-2 items-center px-40 py-10 sm:grid-cols-1 sm:px-10">
         <div class="hero-content">
-            <h2 class="leading-snug text-[80px] font-bold font-sans">
+            <h2 class="leading-snug text-[80px] font-bold font-sans sm:text-4xl">
                 It's good 
 tea time at The Tea House
             </h2>
@@ -40,30 +56,30 @@ tea time at The Tea House
                 Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
             </p>
             <div class="">
-                <button class="bg-gradient-to-r from-sec to-pri p-5 rounded-xl text-2xl text-gray-50">Explore More  <i class="fa-solid fa-arrow-trend-up"></i></button><img src="images/arrow.png" alt="">
+                <button class="bg-gradient-to-r from-sec to-pri p-5 rounded-xl text-2xl text-gray-50 sm:p-3 sm:text-xl">Explore More  <i class="fa-solid fa-arrow-trend-up"></i></button><img src="images/arrow.png" alt="">
             </div>
         </div>
         <div class="hero-images relative">
             <img src="images/banner.png" class="w-full" alt="">
-            <div class="bottom-3 left-24 bg-white rating-content flex shadow-md absolute py-5 px-8 justify-center items-center gap-3 rounded-md">
+            <div class="bottom-3 left-24 bg-white rating-content flex shadow-md absolute py-5 px-8 justify-center items-center gap-3 rounded-md sm:py-2 sm:px-3">
                 <div>
-                    <i class="fa-solid fa-star text-5xl text-pri"></i>
+                    <i class="fa-solid fa-star text-5xl sm:text-3xl text-pri"></i>
                 </div>
                 <div>
-                    <h2 class="text-3xl font-bold">5.00</h2>
-                    <p class="tex-gray-700">Trust Pilot Ratings</p>
+                    <h2 class="text-3xl font-bold sm:text-2xl">5.00</h2>
+                    <p class="tex-gray-700 sm:text-xs">Trust Pilot Ratings</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="px-40">
-        <section class="feature-area mt-32 my-40">
+    <main class="px-40 sm:px-10">
+        <section class="feature-area mt-32 my-40 sm:my-10">
             <div class="title-area flex flex-col justify-center items-center">
-                <h2 class="text-5xl font-bold mb-5 font-sans">Our Featured Products</h2>
-                <p class="text-center mb-12">There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <h2 class="text-5xl font-bold mb-5 font-sans sm:text-3xl">Our Featured Products</h2>
+                <p class="text-center mb-12 sm:text-xs">There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
-            <div class="grid grid-cols-4 gap-10">
+            <div class="grid grid-cols-4 gap-10 sm:grid-cols-1">
                 <div class="feature-item p-10 text-center bg-rose-50 rounded-xl">
                     <img class="m-auto" src="images/tea-1.png" alt="">
                     <h2 class="text-3xl font-bold my-5">Milk Tea</h2>
@@ -87,32 +103,32 @@ tea time at The Tea House
             </div>
         </section>
 
-        <section class="Presented-area grid grid-cols-2 mb-32">
-            <div class="grid grid-cols-2 gap-8 px-24">
+        <section class="presented-area grid grid-cols-2 mb-32 sm:grid-cols-1">
+            <div class="grid grid-cols-2 gap-8 px-24 sm:px-0 sm:mb-8">
                 <div class="bg-rose-50 h-40"></div>
                 <div class="bg-rose-50 row-span-2"><img src="images/fresh-1.png" class="mx-auto py-10" alt=""></div>
                 <div class="bg-rose-50 row-span-2"><img src="images/fresh-2.png" class="mx-auto py-10" alt=""></div>
                 <div class="bg-rose-50 h-40"></div>
             </div>
             <div>
-                <h2 class="text-5xl font-bold">Great Tea, Freshly<br> Presented</h2>
-                <p class="text-gray-700 text-lg my-10">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
-                <h2 class="text-3xl font-bold">Unique Taste</h2>
-                <p class="text-gray-700 text-lg mt-2 mb-10">A Unique and different style from other teapots gives <br> a luxurious and minimalist impression</p>
-                <h2 class="text-3xl font-bold mb-2">Premium Quality</h2>
-                <p class="text-gray-700 text-lg">Premium Quality that makes tea more elegant<br> and more durable when you use it.</p>
+                <h2 class="text-5xl font-bold sm:text-3xl">Great Tea, Freshly<br> Presented</h2>
+                <p class="text-gray-700 text-lg my-10 sm:text-xs">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h2 class="text-3xl font-bold sm:text-2xl">Unique Taste</h2>
+                <p class="text-gray-700 text-lg mt-2 mb-10 sm:text-xs">A Unique and different style from other teapots gives <br> a luxurious and minimalist impression</p>
+                <h2 class="text-3xl font-bold mb-2 sm:text-2xl">Premium Quality</h2>
+                <p class="text-gray-700 text-lg sm:text-xs">Premium Quality that makes tea more elegant<br> and more durable when you use it.</p>
             </div>
         </section>
 
-        <section class="rounded-md client-area bg-gradient-to-r from-sec to-pri px-20 py-28">
-            <div class="grid-cols-2 grid items-center justify-between gap-64">
+        <section class="rounded-md client-area bg-gradient-to-r from-sec to-pri px-20 py-28 sm:px-5 sm:py-8">
+            <div class="grid-cols-2 grid items-center justify-between gap-64 sm:gap-16 sm:grid-cols-1">
                 <div class="flex-1">
                     <h2 class="text-5xl font-bold text-white">Meet Our Super Clients</h2>
                     <p class="text-slate-50 py-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                     <button class="text-xl bg-white py-4 px-6 rounded-lg text-pri">Show All</button>
                 </div>
                 <div class="review-items grid grid-cols-1 gap-10 relative">
-                    <div class="review-item bg-white flex relative px-12 opacity-60 py-10 w-4/5">
+                    <div class="review-item bg-white flex relative px-12 opacity-60 py-10 w-4/5 sm:w-full sm:opacity-100">
                         <div>
                             <img class="absolute -left-[1.5rem] -top-[1.5rem] border-4 rounded-full shadow-md border-white" src="images/client.png" alt="">                            
                         </div>
@@ -122,7 +138,7 @@ tea time at The Tea House
                             <p>Businessman</p>
                         </div>
                     </div>
-                    <div class="review-item bg-white flex relative px-12 opacity-60 py-10 w-4/5">
+                    <div class="review-item bg-white flex relative px-12 opacity-60 py-10 w-4/5 sm:w-full sm:opacity-100">
                         <div>
                             <img class="absolute -left-[1.5rem] -top-[1.5rem] border-4 rounded-full shadow-md border-white" src="images/client.png" alt="">                            
                         </div>
@@ -132,7 +148,7 @@ tea time at The Tea House
                             <p>Businessman</p>
                         </div>
                     </div>
-                    <div class="review-item bg-white flex right-80 top-32 px-12 absolute py-10 w-4/5">
+                    <div class="sm:hidden review-item bg-white flex right-80 top-32 px-12 absolute py-10 w-4/5">
                         <div>
                             <img class="absolute -left-[1.5rem] -top-[1.5rem] border-4 rounded-full shadow-md border-white" src="images/client.png" alt="">                            
                         </div>
@@ -147,12 +163,12 @@ tea time at The Tea House
             </div>
         </section>
 
-        <section class="news-area py-40">
+        <section class="news-area py-40 sm:py-10">
             <div class="title-area flex flex-col justify-center items-center">
-                <h2 class="text-5xl font-bold mb-5 font-sans">News & Events</h2>
-                <p class="text-center mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered<br> alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <h2 class="text-5xl font-bold mb-5 font-sans sm:text-3xl">News & Events</h2>
+                <p class="text-center mb-12 sm:text-xs">There are many variations of passages of Lorem Ipsum available, but the majority have suffered<br> alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
-            <div class="news-container grid grid-cols-3 gap-10">
+            <div class="news-container grid grid-cols-3 gap-10 sm:grid-cols-1">
                 <div class="news-item flex flex-col gap-3 rounded-lg border-2 bg-slate-50">
                     <img class="" src="images/news-1.png" alt="">
                     <div class="px-5 mt-4 mb-10">
@@ -183,21 +199,21 @@ tea time at The Tea House
         </section>
     </main>
 
-    <footer class="px-40 py-32 bg-rose-50">
-        <div class="flex justify-between items-center mb-10">
+    <footer class="px-40 py-32 bg-rose-50 sm:px-10 sm:py-16">
+        <div class="flex justify-between items-center mb-10 sm:flex-col sm:gap-8">
             <div>
                 <img src="images/cup.png" alt="">
             </div>
             <div class="flex gap-10 justify-center items-center">
                 <div>
-                    <h2 class="text-2xl font-bold">Ready to get strated?</h2>
+                    <h2 class="text-2xl font-bold sm:text-lg">Ready to get strated?</h2>
                 </div>
                 <div>
-                    <button class="rounded-md text-2xl font-bold text-white bg-gradient-to-r from-sec to-pri px-5 py-3">Get Started</button>
+                    <button class="rounded-md text-2xl font-bold text-white bg-gradient-to-r from-sec to-pri px-5 py-3 sm:px-3 sm:py-2 sm:text-sm">Get Started</button>
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-4">
+        <div class="grid grid-cols-4 sm:grid-cols-2 sm:gap-10">
             <div>
                 <h2 class="text-2xl font-bold mb-3">Quick Links</h2>
                 <ul>
@@ -225,19 +241,19 @@ tea time at The Tea House
             </div>
             <div>
                 <h2 class="text-2xl font-bold mb-3">Subscribe to our Newsletter</h2>
-                <div class="my-7">
-                    <input class="bg-transparent text-lg outline-none" type="email" placeholder="Email address">
-                    <button class="py-3 px-4 text-white rounded-full bg-gradient-to-r from-sec to-pri"><i class="fa-solid fa-arrow-right text-xl"></i></button>
-                    <hr class="mt-3 w-2/4 h-0.5 bg-gray-500">
+                <div class="my-7 sm:flex sm:flex-col gap-2">
+                    <input class="bg-transparent text-lg outline-none sm:text-xs" type="email" placeholder="Email address">
+                    <button class="py-3 px-4 text-white rounded-full sm:rounded bg-gradient-to-r from-sec to-pri sm:py-2 sm:px-4"><i class="fa-solid fa-arrow-right text-xl sm:text-xs"></i></button>
+                    <hr class="sm:hidden mt-3 w-2/4 h-0.5 bg-gray-500">
                 </div>
-                <div class="social-media flex gap-5 text-2xl">
+                <div class="social-media flex gap-5 text-2xl sm:text-sm">
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-10 text-xl">
+        <div class="text-center mt-10 text-xl sm:text-sm">
             <h2>&copy;2023 Sourav halde- All right reserved</h2>
         </div>
     </footer>
