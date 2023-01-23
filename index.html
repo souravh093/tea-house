@@ -87,8 +87,8 @@ tea time at The Tea House
             </div>
         </section>
 
-        <section class="Presented-area grid grid-cols-2 gap-12 mb-32">
-            <div class="grid grid-cols-2 gap-8">
+        <section class="Presented-area grid grid-cols-2 mb-32">
+            <div class="grid grid-cols-2 gap-8 px-24">
                 <div class="bg-rose-50 h-40"></div>
                 <div class="bg-rose-50 row-span-2"><img src="images/fresh-1.png" class="mx-auto py-10" alt=""></div>
                 <div class="bg-rose-50 row-span-2"><img src="images/fresh-2.png" class="mx-auto py-10" alt=""></div>
@@ -104,96 +104,102 @@ tea time at The Tea House
             </div>
         </section>
 
-        <section class="client-area">
-            <div class="grid grid-cols-2">
-                <div>
-                    <h2>Meet Our Super Clients</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                    <button>Show All</button>
+        <section class="rounded-md client-area bg-gradient-to-r from-sec to-pri px-20 py-28">
+            <div class="grid-cols-2 grid items-center justify-between gap-64">
+                <div class="flex-1">
+                    <h2 class="text-5xl font-bold text-white">Meet Our Super Clients</h2>
+                    <p class="text-slate-50 py-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                    <button class="text-xl bg-white py-4 px-6 rounded-lg text-pri">Show All</button>
                 </div>
-                <div class="review-items">
-                    <div class="review-item">
+                <div class="review-items grid grid-cols-1 gap-10 relative">
+                    <div class="review-item bg-white flex relative px-12 opacity-60 py-10 w-4/5">
                         <div>
-                            <img src="images/client.png" alt="">                            
+                            <img class="absolute -left-[1.5rem] -top-[1.5rem] border-4 rounded-full shadow-md border-white" src="images/client.png" alt="">                            
                         </div>
                         <div>
-                            <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-                            <p>Ilham Yuda</p>
+                            <p class="text-gray-700">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                            <p class="text-xl font-bold py-5">Ilham Yuda</p>
                             <p>Businessman</p>
                         </div>
                     </div>
-                    <div class="review-item">
+                    <div class="review-item bg-white flex relative px-12 opacity-60 py-10 w-4/5">
                         <div>
-                            <img src="images/client.png" alt="">                            
+                            <img class="absolute -left-[1.5rem] -top-[1.5rem] border-4 rounded-full shadow-md border-white" src="images/client.png" alt="">                            
                         </div>
                         <div>
-                            <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-                            <p>Ilham Yuda</p>
+                            <p class="text-gray-700">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                            <p class="text-xl font-bold py-5">Ilham Yuda</p>
+                            <p>Businessman</p>
+                        </div>
+                    </div>
+                    <div class="review-item bg-white flex right-80 top-32 px-12 absolute py-10 w-4/5">
+                        <div>
+                            <img class="absolute -left-[1.5rem] -top-[1.5rem] border-4 rounded-full shadow-md border-white" src="images/client.png" alt="">                            
+                        </div>
+                        <div>
+                            <p class="text-gray-700">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                            <p class="text-xl font-bold py-5">Ilham Yuda</p>
                             <p>Businessman</p>
                         </div>
                     </div>
                 </div>
-                <div class="review-item" style="display: none;">
-                    <div>
-                        <img src="images/client.png" alt="">                            
-                    </div>
-                    <div>
-                        <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-                        <p>Ilham Yuda</p>
-                        <p>Businessman</p>
-                    </div>
-                </div>
+                
             </div>
         </section>
 
-        <section class="news-area">
-            <div class="title-area">
-                <h2>Our Featured Products</h2>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        <section class="news-area py-40">
+            <div class="title-area flex flex-col justify-center items-center">
+                <h2 class="text-5xl font-bold mb-5 font-sans">News & Events</h2>
+                <p class="text-center mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered<br> alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
-            <div class="news-container grid grid-cols-3">
-                <div class="news-item">
-                    <img src="images/news-1.png" alt="">
-                    <p>Feb 05, 2027</p>
-                    <h2>Collecting 8 points for discount</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available.</p>
-                    <button>Learn More</button>
+            <div class="news-container grid grid-cols-3 gap-10">
+                <div class="news-item flex flex-col gap-3 rounded-lg border-2 bg-slate-50">
+                    <img class="" src="images/news-1.png" alt="">
+                    <div class="px-5 mt-4 mb-10">
+                        <p class="text-gray-700 text-md">Feb 05, 2027</p>
+                        <h2 class="text-2xl font-bold my-3">Collecting 8 points for discount</h2>
+                        <p class="mb-2">There are many variations of passages of Lorem Ipsum available.</p>
+                        <button class="text-xl font-bold bg-gradient-to-r from-pri to-sec px-5 py-3 text-white rounded-md">Learn More</button>
+                    </div>
                 </div>
-                <div class="news-item">
-                    <img src="images/news-2.png" alt="">
-                    <p>Feb 05, 2027</p>
-                    <h2>Collecting 8 points for discount</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available.</p>
-                    <button>Learn More</button>
+                <div class="news-item flex flex-col gap-3 rounded-lg border-2 bg-slate-50">
+                    <img class="" src="images/news-3.png" alt="">
+                    <div class="px-5 mt-4 mb-10">
+                        <p class="text-gray-700 text-md">Feb 05, 2027</p>
+                        <h2 class="text-2xl font-bold my-3">Collecting 8 points for discount</h2>
+                        <p class="mb-2">There are many variations of passages of Lorem Ipsum available.</p>
+                        <button class="text-xl font-bold bg-gradient-to-r from-pri to-sec px-5 py-3 text-white rounded-md">Learn More</button>
+                    </div>
                 </div>
-                <div class="news-item">
-                    <img src="images/news-3.png" alt="">
-                    <p>Feb 05, 2027</p>
-                    <h2>Collecting 8 points for discount</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available.</p>
-                    <button>Learn More</button>
+                <div class="news-item flex flex-col gap-3 rounded-lg border-2 bg-slate-50">
+                    <img class="" src="images/news-2.png" alt="">
+                    <div class="px-5 mt-4 mb-10">
+                        <p class="text-gray-700 text-md">Feb 05, 2027</p>
+                        <h2 class="text-2xl font-bold my-3">Collecting 8 points for discount</h2>
+                        <p class="mb-2">There are many variations of passages of Lorem Ipsum available.</p>
+                        <button class="text-xl font-bold bg-gradient-to-r from-pri to-sec px-5 py-3 text-white rounded-md">Learn More</button>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
 
     <footer class="px-40 py-32 bg-rose-50">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center mb-10">
             <div>
                 <img src="images/cup.png" alt="">
             </div>
-            <div>
+            <div class="flex gap-10 justify-center items-center">
                 <div>
-                    <h2>Ready to get strated?</h2>
+                    <h2 class="text-2xl font-bold">Ready to get strated?</h2>
                 </div>
                 <div>
-                    <button>Get Started</button>
+                    <button class="rounded-md text-2xl font-bold text-white bg-gradient-to-r from-sec to-pri px-5 py-3">Get Started</button>
                 </div>
             </div>
         </div>
         <div class="grid grid-cols-4">
             <div>
-                <h2>Quick Links</h2>
+                <h2 class="text-2xl font-bold mb-3">Quick Links</h2>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
@@ -202,7 +208,7 @@ tea time at The Tea House
                 </ul>
             </div>
             <div>
-                <h2>Our Service</h2>
+                <h2 class="text-2xl font-bold mb-3">Our Service</h2>
                 <ul>
                     <li><a href="#">Life Insurance</a></li>
                     <li><a href="#">Car Insurance</a></li>
@@ -211,26 +217,27 @@ tea time at The Tea House
                 </ul>
             </div>
             <div>
-                <h2>Help</h2>
+                <h2 class="text-2xl font-bold mb-3">Help</h2>
                 <ul>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
             <div>
-                <h2>Subscribe to our Newsletter</h2>
-                <div>
-                    <input type="email" placeholder="Email address">
-                    <button><img src="images/arrow.png" alt=""></button>
+                <h2 class="text-2xl font-bold mb-3">Subscribe to our Newsletter</h2>
+                <div class="my-7">
+                    <input class="bg-transparent text-lg outline-none" type="email" placeholder="Email address">
+                    <button class="py-3 px-4 text-white rounded-full bg-gradient-to-r from-sec to-pri"><i class="fa-solid fa-arrow-right text-xl"></i></button>
+                    <hr class="mt-3 w-2/4 h-0.5 bg-gray-500">
                 </div>
-                <div class="social-media">
+                <div class="social-media flex gap-5 text-2xl">
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
         </div>
-        <div class="text-center">
+        <div class="text-center mt-10 text-xl">
             <h2>&copy;2023 Sourav halde- All right reserved</h2>
         </div>
     </footer>
